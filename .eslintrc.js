@@ -117,6 +117,14 @@ module.exports = {
       rules: {
         /* TypeScript では PropTypes による型チェックは不要 */
         'react/prop-types': 'off',
+
+        /* Emotion で利用する css prop を許容 */
+        'react/no-unknown-property': [
+          'error',
+          {
+            ignore: ['css'],
+          },
+        ],
       },
     },
   ],
