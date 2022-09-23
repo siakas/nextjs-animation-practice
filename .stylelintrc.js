@@ -5,5 +5,5 @@ module.exports = {
     'stylelint-config-recess-order',
     'stylelint-config-prettier',
   ],
-  ignoreFiles: ['**/node_modules/**'],
+  ignoreFiles: ['node_modules'],
 }
