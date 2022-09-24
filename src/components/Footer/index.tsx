@@ -10,128 +10,128 @@ const Footer: FC = () => {
           <div css={styles.col}>
             <ul css={styles.nav}>
               <li>
-                <a href="null">Home Page</a>
+                <a>Home Page</a>
               </li>
               <li>
-                <a href="null">World</a>
+                <a>World</a>
               </li>
               <li>
-                <a href="null">Coronavirus</a>
+                <a>Coronavirus</a>
               </li>
               <li>
-                <a href="null">U.S.</a>
+                <a>U.S.</a>
               </li>
               <li>
-                <a href="null">Politics</a>
+                <a>Politics</a>
               </li>
               <li>
-                <a href="null">Business</a>
+                <a>Business</a>
               </li>
               <li>
-                <a href="null">Science</a>
+                <a>Science</a>
               </li>
               <li>
-                <a href="null">Wildfire Tracker</a>
+                <a>Wildfire Tracker</a>
               </li>
               <li>
-                <a href="null">Corrections</a>
+                <a>Corrections</a>
               </li>
               <li>
-                <a href="null">Trending</a>
-              </li>
-            </ul>
-          </div>
-          <div css={styles.col}>
-            <ul css={styles.nav}>
-              <li>
-                <a href="null">Today&apos;s Opinion</a>
-              </li>
-              <li>
-                <a href="null">Columnists</a>
-              </li>
-              <li>
-                <a href="null">Editorials</a>
-              </li>
-              <li>
-                <a href="null">Letters</a>
-              </li>
-              <li>
-                <a href="null">Sunday Opinion</a>
+                <a>Trending</a>
               </li>
             </ul>
           </div>
           <div css={styles.col}>
             <ul css={styles.nav}>
               <li>
-                <a href="null">Automotive</a>
+                <a>Today&apos;s Opinion</a>
               </li>
               <li>
-                <a href="null">Games</a>
+                <a>Columnists</a>
               </li>
               <li>
-                <a href="null">Education</a>
+                <a>Editorials</a>
               </li>
               <li>
-                <a href="null">Food</a>
+                <a>Letters</a>
               </li>
               <li>
-                <a href="null">Jobs</a>
-              </li>
-              <li>
-                <a href="null">Parenting</a>
-              </li>
-              <li>
-                <a href="null">Style</a>
+                <a>Sunday Opinion</a>
               </li>
             </ul>
           </div>
           <div css={styles.col}>
             <ul css={styles.nav}>
               <li>
-                <a href="null">Art &amp; Design</a>
+                <a>Automotive</a>
               </li>
               <li>
-                <a href="null">Books</a>
+                <a>Games</a>
               </li>
               <li>
-                <a href="null">Dance</a>
+                <a>Education</a>
               </li>
               <li>
-                <a href="null">Movies</a>
+                <a>Food</a>
               </li>
               <li>
-                <a href="null">Music</a>
+                <a>Jobs</a>
               </li>
               <li>
-                <a href="null">Pop Culture</a>
+                <a>Parenting</a>
               </li>
               <li>
-                <a href="null">Health</a>
-              </li>
-              <li>
-                <a href="null">Real Estate</a>
-              </li>
-              <li>
-                <a href="null">Travel</a>
+                <a>Style</a>
               </li>
             </ul>
           </div>
           <div css={styles.col}>
             <ul css={styles.nav}>
               <li>
-                <a href="null">Reader Center</a>
+                <a>Art &amp; Design</a>
               </li>
               <li>
-                <a href="null">The Athletic</a>
+                <a>Books</a>
               </li>
               <li>
-                <a href="null">Wirecutter</a>
+                <a>Dance</a>
               </li>
               <li>
-                <a href="null">Cooking</a>
+                <a>Movies</a>
               </li>
               <li>
-                <a href="null">Podcasts</a>
+                <a>Music</a>
+              </li>
+              <li>
+                <a>Pop Culture</a>
+              </li>
+              <li>
+                <a>Health</a>
+              </li>
+              <li>
+                <a>Real Estate</a>
+              </li>
+              <li>
+                <a>Travel</a>
+              </li>
+            </ul>
+          </div>
+          <div css={styles.col}>
+            <ul css={styles.nav}>
+              <li>
+                <a>Reader Center</a>
+              </li>
+              <li>
+                <a>The Athletic</a>
+              </li>
+              <li>
+                <a>Wirecutter</a>
+              </li>
+              <li>
+                <a>Cooking</a>
+              </li>
+              <li>
+                <a>Podcasts</a>
               </li>
             </ul>
           </div>

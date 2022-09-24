@@ -1,4 +1,7 @@
+import Link from 'next/link'
 import { FC } from 'react'
+
+import { AiFillHome } from 'react-icons/ai'
 
 import * as styles from './Header.styles'
 
@@ -7,23 +10,32 @@ const Header: FC = () => {
     <header css={styles.header}>
       <nav css={styles.inner}>
         <ul css={styles.nav}>
-          <li>
-            <a href="null">About</a>
+          <li css={styles.home}>
+            <Link href="/">
+              <a>
+                <AiFillHome />
+              </a>
+            </Link>
           </li>
           <li>
-            <a href="null">Collection</a>
+            <Link href="/about/">
+              <a>About</a>
+            </Link>
           </li>
           <li>
-            <a href="null">News</a>
+            <a>Collection</a>
           </li>
           <li>
-            <a href="null">Shop List</a>
+            <a>News</a>
           </li>
           <li>
-            <a href="null">Campaign</a>
+            <a>Shop List</a>
           </li>
           <li>
-            <a href="null">Web Store</a>
+            <a>Campaign</a>
+          </li>
+          <li>
+            <a>Web Store</a>
           </li>
         </ul>
       </nav>

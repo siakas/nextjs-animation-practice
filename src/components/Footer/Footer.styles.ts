@@ -34,6 +34,7 @@ export const nav = css`
     > a {
       color: #fff;
       text-decoration: none;
+      cursor: pointer;
 
       &:hover {
         text-decoration: underline;

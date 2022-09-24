@@ -21,6 +21,7 @@ export const nav = css`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   > li {
     > a {
@@ -32,6 +33,7 @@ export const nav = css`
       padding: 1rem 1.5rem;
       font-family: 'Lato', sans-serif;
       position: relative;
+      cursor: pointer;
 
       &::after {
         content: '';
@@ -52,5 +54,15 @@ export const nav = css`
         }
       }
     }
+  }
+`
+
+export const home = css`
+  position: absolute;
+  left: 0;
+
+  svg {
+    position: relative;
+    top: -0.3em;
   }
 `

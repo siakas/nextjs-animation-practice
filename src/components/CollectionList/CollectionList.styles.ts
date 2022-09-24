@@ -28,6 +28,7 @@ export const link = css`
   display: block;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 
   &::before {
     content: '';
