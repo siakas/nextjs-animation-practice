@@ -49,24 +49,23 @@ const MainVisual: FC = () => {
             loading="lazy"
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <img
+            css={styles.image}
+            src="/assets/img/top/mv/04.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            css={styles.image}
+            src="/assets/img/top/mv/05.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </SwiperSlide>
       </Swiper>
-      {/* <img
-        css={styles.image}
-        src="/assets/img/top/mv/02.jpg"
-        alt=""
-        loading="lazy"
-      /> */}
-      {/* <Slider {...slickSettings}>
-        <div>
-          <img css={styles.image} src="/assets/img/top/mv/01.jpg" alt="" />
-        </div>
-        <div>
-          <img css={styles.image} src="/assets/img/top/mv/02.jpg" alt="" />
-        </div>
-        <div>
-          <img css={styles.image} src="/assets/img/top/mv/03.jpg" alt="" />
-        </div>
-      </Slider> */}
       <div css={styles.catchcopy}>
         Lorem ipsum dolor,
         <br />
