@@ -91,7 +91,7 @@ module.exports = {
           },
           // `@/context`, `@/hooks`, `@/utils` の import をグルーピング
           {
-            pattern: '{@/context/**,@/hooks/**,@/utils/**}',
+            pattern: '{@/context/**,@/hooks/**,@/utils/**,@/data/**}',
             group: 'internal',
             position: 'before',
           },

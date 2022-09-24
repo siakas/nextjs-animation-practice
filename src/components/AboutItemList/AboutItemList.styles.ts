@@ -5,8 +5,4 @@ export const container = css`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
-  > .item {
-    width: calc((100% - (40px * 3)) / 4);
-  }
 `

@@ -5,33 +5,33 @@ import * as styles from './CollectionList.styles'
 const CollectionList: FC = () => {
   return (
     <div css={styles.container}>
-      <ul css={styles.list}>
-        <li css={[styles.item, styles.large]}>
+      <div css={styles.list}>
+        <div css={[styles.item, styles.large]}>
           <a css={styles.link}>
-            <img src="https://picsum.photos/id/10/415/640" alt="" />
+            <img src="/assets/img/top/collection/01.jpg" alt="" />
           </a>
-        </li>
-        <li css={styles.item}>
+        </div>
+        <div css={styles.item}>
           <a css={styles.link}>
-            <img src="https://picsum.photos/id/1000/415/300" alt="" />
+            <img src="/assets/img/top/collection/02.jpg" alt="" />
           </a>
-        </li>
-        <li css={styles.item}>
+        </div>
+        <div css={styles.item}>
           <a css={styles.link}>
-            <img src="https://picsum.photos/id/1001/415/300" alt="" />
+            <img src="/assets/img/top/collection/03.jpg" alt="" />
           </a>
-        </li>
-        <li css={styles.item}>
+        </div>
+        <div css={styles.item}>
           <a css={styles.link}>
-            <img src="https://picsum.photos/id/1002/415/300" alt="" />
+            <img src="/assets/img/top/collection/04.jpg" alt="" />
           </a>
-        </li>
-        <li css={styles.item}>
+        </div>
+        <div css={styles.item}>
           <a css={styles.link}>
-            <img src="https://picsum.photos/id/1003/415/300" alt="" />
+            <img src="/assets/img/top/collection/05.jpg" alt="" />
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   )
 }

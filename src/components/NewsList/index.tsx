@@ -11,7 +11,7 @@ const NewsList: FC = () => {
             2022.02.20
           </time>
           <div css={styles.thumb}>
-            <img src="https://picsum.photos/id/30/640/420" alt="" />
+            <img src="/assets/img/top/news/01.jpg" alt="" />
           </div>
           <div css={styles.content}>
             <h2 css={styles.title}>Accusantium fuga non eligendi id ab</h2>
@@ -28,7 +28,7 @@ const NewsList: FC = () => {
             2022.02.19
           </time>
           <div css={styles.thumb}>
-            <img src="https://picsum.photos/id/31/640/420" alt="" />
+            <img src="/assets/img/top/news/02.jpg" alt="" />
           </div>
           <div css={styles.content}>
             <h2 css={styles.title}>
@@ -47,7 +47,7 @@ const NewsList: FC = () => {
             2022.02.16
           </time>
           <div css={styles.thumb}>
-            <img src="https://picsum.photos/id/32/640/420" alt="" />
+            <img src="/assets/img/top/news/03.jpg" alt="" />
           </div>
           <div css={styles.content}>
             <h2 css={styles.title}>Pariatur cum enim sed</h2>
@@ -64,7 +64,7 @@ const NewsList: FC = () => {
             2022.02.10
           </time>
           <div css={styles.thumb}>
-            <img src="https://picsum.photos/id/33/640/420" alt="" />
+            <img src="/assets/img/top/news/04.jpg" alt="" />
           </div>
           <div css={styles.content}>
             <h2 css={styles.title}>Sequi, nemo modi, officia ipsum fugiat</h2>

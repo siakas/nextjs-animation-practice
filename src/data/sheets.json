@@ -1,0 +1,87 @@
+{
+  "pages": {
+    "top": {
+      "id": "top",
+      "name": "",
+      "path": "/",
+      "url": "https://symphonious-froyo-d78ff0.netlify.app/",
+      "title": "Airbnb-ish",
+      "description": "Find holiday rentals, cabins, beach houses, unique homes and experiences around the world – all made possible by Hosts on Airbnb."
+    }
+  },
+  "news": [
+    {
+      "date": "2022-02-20",
+      "thumb": "01.jpg",
+      "title": "Accusantium fuga non eligendi id ab",
+      "lead": "Error voluptatem eius illum consequatur, similique praesentium, voluptas blanditiis suscipit exercitationem molestiae magnam"
+    },
+    {
+      "date": "2022-02-19",
+      "thumb": "02.jpg",
+      "title": "Quis nam praesentium eum adipisci asperiores",
+      "lead": "Ratione atque quia expedita voluptas voluptatum esse iure. Quae, mollitia"
+    },
+    {
+      "date": "2022-02-16",
+      "thumb": "03.jpg",
+      "title": "Pariatur cum enim sed",
+      "lead": "Soluta eaque nihil voluptate inventore temporibus aliquam, adipisci accusantium odit"
+    },
+    {
+      "date": "2022-02-10",
+      "thumb": "04.jpg",
+      "title": "Sequi, nemo modi, officia ipsum fugiat",
+      "lead": "Illum minima eos sint cum debitis quia autem. Numquam officia repudiandae"
+    }
+  ],
+  "collection": [
+    {
+      "image": "01.jpg",
+      "pickup": true
+    },
+    {
+      "image": "02.jpg",
+      "pickup": false
+    },
+    {
+      "image": "03.jpg",
+      "pickup": false
+    },
+    {
+      "image": "04.jpg",
+      "pickup": false
+    },
+    {
+      "image": "05.jpg",
+      "pickup": false
+    }
+  ],
+  "aboutItems": [
+    { "image": "01.jpg" },
+    { "image": "02.jpg" },
+    { "image": "03.jpg" },
+    { "image": "04.jpg" },
+    { "image": "05.jpg" },
+    { "image": "06.jpg" },
+    { "image": "07.jpg" },
+    { "image": "08.jpg" },
+    { "image": "09.jpg" },
+    { "image": "10.jpg" },
+    { "image": "11.jpg" },
+    { "image": "12.jpg" },
+    { "image": "13.jpg" },
+    { "image": "14.jpg" },
+    { "image": "15.jpg" },
+    { "image": "16.jpg" },
+    { "image": "17.jpg" },
+    { "image": "18.jpg" },
+    { "image": "19.jpg" },
+    { "image": "20.jpg" },
+    { "image": "21.jpg" },
+    { "image": "22.jpg" },
+    { "image": "23.jpg" },
+    { "image": "24.jpg" },
+    { "image": "25.jpg" }
+  ]
+}

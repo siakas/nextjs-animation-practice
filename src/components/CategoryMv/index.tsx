@@ -2,14 +2,14 @@ import { FC } from 'react'
 
 import * as styles from './CategoryMv.styles'
 
-const CategoryMv: FC = () => {
+interface Props {
+  category: string
+}
+
+const CategoryMv: FC<Props> = ({ category }) => {
   return (
     <div css={styles.container}>
-      <img
-        css={styles.image}
-        src="https://picsum.photos/id/112/2600/800"
-        alt=""
-      />
+      <img css={styles.image} src={`/assets/img/${category}/mv.jpg`} alt="" />
     </div>
   )
 }

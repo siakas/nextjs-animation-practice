@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 
-import AboutItems from '@/components/AboutItems'
+import { aboutItems } from '@/data/sheets.json'
+
+import AboutItemList from '@/components/AboutItemList'
 import AboutLead from '@/components/AboutLead'
 import CategoryMv from '@/components/CategoryMv'
 import HeadingSection from '@/components/HeadingSection'
@@ -11,11 +13,11 @@ import DefaultLayout from '@/layout/DefaultLayout'
 const Home: NextPage = () => {
   return (
     <DefaultLayout>
-      <CategoryMv />
+      <CategoryMv category="about" />
       <MainContent>
         <HeadingSection title="About Us" />
         <AboutLead />
-        <AboutItems />
+        <AboutItemList items={aboutItems} />
       </MainContent>
     </DefaultLayout>
   )
