@@ -17,7 +17,7 @@ const MotionFadeInUp: FC<Props> = ({ children }) => {
   })
 
   useEffect(() => {
-    controls.start(inView ? 'visible' : 'hidden')
+    void controls.start(inView ? 'visible' : 'hidden')
   }, [controls, inView])
 
   return (

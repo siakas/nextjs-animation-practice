@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
 
-import { aboutItems } from '@/data/sheets.json'
-
 import AboutItemList from '@/components/AboutItemList'
 import AboutLead from '@/components/AboutLead'
 import CategoryMv from '@/components/CategoryMv'
@@ -21,7 +19,7 @@ const Home: NextPage = () => {
           <AboutLead />
         </MotionFadeInUp>
 
-        <AboutItemList items={aboutItems} />
+        <AboutItemList />
       </MainContent>
     </DefaultLayout>
   )

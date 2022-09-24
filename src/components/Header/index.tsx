@@ -10,7 +10,7 @@ const Header: FC = () => {
   // スクロールによるヘッダ固定
   const [scrolled, setScrolled] = useState(false)
   useEffect(() => {
-    const onScroll = () => {
+    const onScroll = (): any => {
       if (window.scrollY > 50) {
         setScrolled(true)
       } else {

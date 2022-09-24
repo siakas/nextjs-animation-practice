@@ -9,7 +9,7 @@ const ScrollPageUp: FC = () => {
   // スクロールによるコンポーネントの表示切り替え
   const [scrolled, setScrolled] = useState(false)
   useEffect(() => {
-    const onScroll = () => {
+    const onScroll = (): any => {
       if (window.scrollY > 200) {
         setScrolled(true)
       } else {

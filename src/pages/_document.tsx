@@ -1,6 +1,6 @@
 import { Head, Html, Main, NextScript } from 'next/document'
 
-const Document = () => {
+const Document = (): any => {
   return (
     <Html id="root">
       <Head>
