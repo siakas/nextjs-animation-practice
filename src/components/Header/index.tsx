@@ -14,6 +14,9 @@ const Header: FC = () => {
             <a href="null">Collection</a>
           </li>
           <li>
+            <a href="null">News</a>
+          </li>
+          <li>
             <a href="null">Shop List</a>
           </li>
           <li>

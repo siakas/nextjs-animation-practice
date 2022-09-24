@@ -28,7 +28,7 @@ export const nav = css`
       color: #fff;
       text-decoration: none;
       font-size: 1.2rem;
-      font-weight: bold;
+      font-weight: 300;
       padding: 1rem 1.5rem;
       font-family: 'Lato', sans-serif;
       position: relative;

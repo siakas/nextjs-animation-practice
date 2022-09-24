@@ -25,7 +25,7 @@ export const catchcopy = css`
   color: #fff;
   font-size: clamp(1.5rem, 1.15rem + 1.6vw, 3.75rem);
   line-height: 1.2;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: -0.02em;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   font-family: 'Lato', sans-serif;

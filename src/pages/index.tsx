@@ -1,7 +1,11 @@
 import type { NextPage } from 'next'
 
+import BannerInstagram from '@/components/BannerInstagram'
+import CollectionList from '@/components/CollectionList'
+import HeadingSection from '@/components/HeadingSection'
 import MainContent from '@/components/MainContent'
 import MainVisual from '@/components/MainVisual'
+import NewsList from '@/components/NewsList'
 
 import DefaultLayout from '@/layout/DefaultLayout'
 
@@ -10,33 +14,14 @@ const Home: NextPage = () => {
     <DefaultLayout>
       <MainVisual />
       <MainContent>
-        <h2>Collection</h2>
+        <HeadingSection title="Collection" />
+        <CollectionList />
 
-        <h2>Fashion</h2>
+        <HeadingSection title="News" />
+        <NewsList />
 
-        <h2>Official Instagram</h2>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <HeadingSection title="Official Instagram" />
+        <BannerInstagram />
       </MainContent>
     </DefaultLayout>
   )
