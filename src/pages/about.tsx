@@ -7,6 +7,7 @@ import AboutLead from '@/components/AboutLead'
 import CategoryMv from '@/components/CategoryMv'
 import HeadingSection from '@/components/HeadingSection'
 import MainContent from '@/components/MainContent'
+import MotionFadeInUp from '@/components/MotionFadeInUp'
 
 import DefaultLayout from '@/layout/DefaultLayout'
 
@@ -15,8 +16,11 @@ const Home: NextPage = () => {
     <DefaultLayout>
       <CategoryMv category="about" />
       <MainContent>
-        <HeadingSection title="About Us" />
-        <AboutLead />
+        <MotionFadeInUp>
+          <HeadingSection title="About Us" />
+          <AboutLead />
+        </MotionFadeInUp>
+
         <AboutItemList items={aboutItems} />
       </MainContent>
     </DefaultLayout>
