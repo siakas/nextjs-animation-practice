@@ -14,10 +14,10 @@ const Home: NextPage = () => {
     <DefaultLayout>
       <MainVisual />
       <MainContent>
-        <HeadingSection title="Collection" />
+        <HeadingSection id="collection" title="Collection" />
         <CollectionList />
 
-        <HeadingSection title="News" />
+        <HeadingSection id="news" title="News" />
         <NewsList />
 
         <HeadingSection title="Official Instagram" />

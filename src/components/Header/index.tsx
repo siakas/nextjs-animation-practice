@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { FC, useEffect, useState } from 'react'
 
 import { AiFillHome } from 'react-icons/ai'
+import { Link as Scroll } from 'react-scroll'
 
 import * as styles from './Header.styles'
 
@@ -38,10 +39,24 @@ const Header: FC = () => {
             </Link>
           </li>
           <li>
-            <a>Collection</a>
+            <Scroll
+              to="collection"
+              smooth="easeOutCubic"
+              duration={500}
+              offset={-115}
+            >
+              Collection
+            </Scroll>
           </li>
           <li>
-            <a>News</a>
+            <Scroll
+              to="news"
+              smooth="easeOutCubic"
+              duration={500}
+              offset={-115}
+            >
+              News
+            </Scroll>
           </li>
           <li>
             <a>Shop List</a>
