@@ -33,14 +33,14 @@ const Header: FC = () => {
       <nav className="inner">
         <ul css={styles.nav}>
           <li className="-home">
-            <Link href="/">
+            <Link href="/" scroll={false}>
               <a>
                 <AiFillHome />
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/about/">
+            <Link href="/about/" scroll={false}>
               <a>About</a>
             </Link>
           </li>
