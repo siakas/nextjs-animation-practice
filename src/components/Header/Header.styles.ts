@@ -2,18 +2,23 @@ import { css } from '@emotion/react'
 
 export const header = css`
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 46px;
   left: 0;
   padding: 26px;
   z-index: 10;
-  /* background-color: rgba(255, 255, 255, 0.8); */
-`
+  transition: background-color 0.3s 0.2s, top 0.2s ease-out;
 
-export const inner = css`
-  max-width: 1325px;
-  width: 100%;
-  margin: 0 auto;
+  &.-scrolled {
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  > .inner {
+    max-width: 1325px;
+    width: 100%;
+    margin: 0 auto;
+  }
 `
 
 export const nav = css`
@@ -24,6 +29,16 @@ export const nav = css`
   position: relative;
 
   > li {
+    &.-home {
+      position: absolute;
+      left: 0;
+
+      svg {
+        position: relative;
+        top: -0.3em;
+      }
+    }
+
     > a {
       display: block;
       color: #fff;
@@ -34,6 +49,11 @@ export const nav = css`
       font-family: 'Lato', sans-serif;
       position: relative;
       cursor: pointer;
+      transition: color 0.3s 0.2s;
+
+      .-scrolled & {
+        color: #333;
+      }
 
       &::after {
         content: '';
@@ -45,6 +65,10 @@ export const nav = css`
         left: 50%;
         right: 50%;
         transition: all 0.2s ease;
+
+        .-scrolled & {
+          background-color: #333;
+        }
       }
 
       &:hover {
@@ -54,15 +78,5 @@ export const nav = css`
         }
       }
     }
-  }
-`
-
-export const home = css`
-  position: absolute;
-  left: 0;
-
-  svg {
-    position: relative;
-    top: -0.3em;
   }
 `
