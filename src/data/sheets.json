@@ -4,9 +4,17 @@
       "id": "top",
       "name": "",
       "path": "/",
-      "url": "https://symphonious-froyo-d78ff0.netlify.app/",
-      "title": "Airbnb-ish",
-      "description": "Find holiday rentals, cabins, beach houses, unique homes and experiences around the world – all made possible by Hosts on Airbnb."
+      "url": "https://d-nets-anim.codeoff.net/",
+      "title": "Next.js＋TypeScrptによる汎用アニメーションサンプル",
+      "description": ""
+    },
+    "about": {
+      "id": "about",
+      "name": "",
+      "path": "/about/",
+      "url": "https://d-nets-anim.codeoff.net/about/",
+      "title": "About | Next.js＋TypeScrptによる汎用アニメーションサンプル",
+      "description": ""
     }
   },
   "news": [
