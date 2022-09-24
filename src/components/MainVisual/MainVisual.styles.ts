@@ -40,7 +40,7 @@ export const catchcopy = css`
   position: absolute;
   left: 5rem;
   bottom: 6rem;
-  z-index: 100;
+  z-index: 10;
   color: #fff;
   font-size: clamp(1.5rem, 1.15rem + 1.6vw, 3.75rem);
   line-height: 1.2;

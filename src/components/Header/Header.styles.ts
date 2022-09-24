@@ -6,7 +6,7 @@ export const header = css`
   top: 46px;
   left: 0;
   padding: 26px;
-  z-index: 10;
+  z-index: 200;
   transition: background-color 0.3s 0.2s, top 0.2s ease-out;
 
   &.-scrolled {
