@@ -9,7 +9,7 @@ interface Props {
 const AboutItem: FC<Props> = ({ file }) => {
   return (
     <div css={styles.item}>
-      <img src={`/assets/img/about/items/${file}`} alt="" />
+      <img src={`/assets/img/about/items/${file}`} alt="" loading="lazy" />
     </div>
   )
 }

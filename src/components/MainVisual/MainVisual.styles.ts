@@ -9,6 +9,24 @@ export const container = css`
   padding: 26px 26px 0;
   margin: 0 auto 120px;
   position: relative;
+
+  .mySwiper {
+    max-height: 100%;
+
+    .swiper-pagination {
+      bottom: 20px;
+    }
+
+    .swiper-pagination-bullet {
+      border-radius: 0;
+      height: 3px;
+      width: 80px;
+
+      &.swiper-pagination-bullet-active {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
 `
 
 export const image = css`
@@ -22,6 +40,7 @@ export const catchcopy = css`
   position: absolute;
   left: 5rem;
   bottom: 6rem;
+  z-index: 100;
   color: #fff;
   font-size: clamp(1.5rem, 1.15rem + 1.6vw, 3.75rem);
   line-height: 1.2;

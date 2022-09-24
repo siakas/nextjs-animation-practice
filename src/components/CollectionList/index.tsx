@@ -8,27 +8,47 @@ const CollectionList: FC = () => {
       <div css={styles.list}>
         <div css={[styles.item, styles.large]}>
           <a css={styles.link}>
-            <img src="/assets/img/top/collection/01.jpg" alt="" />
+            <img
+              src="/assets/img/top/collection/01.jpg"
+              alt=""
+              loading="lazy"
+            />
           </a>
         </div>
         <div css={styles.item}>
           <a css={styles.link}>
-            <img src="/assets/img/top/collection/02.jpg" alt="" />
+            <img
+              src="/assets/img/top/collection/02.jpg"
+              alt=""
+              loading="lazy"
+            />
           </a>
         </div>
         <div css={styles.item}>
           <a css={styles.link}>
-            <img src="/assets/img/top/collection/03.jpg" alt="" />
+            <img
+              src="/assets/img/top/collection/03.jpg"
+              alt=""
+              loading="lazy"
+            />
           </a>
         </div>
         <div css={styles.item}>
           <a css={styles.link}>
-            <img src="/assets/img/top/collection/04.jpg" alt="" />
+            <img
+              src="/assets/img/top/collection/04.jpg"
+              alt=""
+              loading="lazy"
+            />
           </a>
         </div>
         <div css={styles.item}>
           <a css={styles.link}>
-            <img src="/assets/img/top/collection/05.jpg" alt="" />
+            <img
+              src="/assets/img/top/collection/05.jpg"
+              alt=""
+              loading="lazy"
+            />
           </a>
         </div>
       </div>

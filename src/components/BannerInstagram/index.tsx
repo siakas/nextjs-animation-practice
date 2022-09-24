@@ -6,7 +6,7 @@ const BannerInstagram: FC = () => {
   return (
     <div css={styles.container}>
       <a css={styles.link}>
-        <img src="/assets/img/top/banner/instagram.jpg" alt="" />
+        <img src="/assets/img/top/banner/instagram.jpg" alt="" loading="lazy" />
       </a>
     </div>
   )

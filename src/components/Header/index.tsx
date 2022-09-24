@@ -22,6 +22,12 @@ const Header: FC = () => {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const scrollSettings = {
+    smooth: 'easeOutCubic',
+    duration: 500,
+    offset: -115,
+  }
+
   return (
     <header css={styles.header} className={`${scrolled ? '-scrolled' : ''}`}>
       <nav className="inner">
@@ -39,22 +45,12 @@ const Header: FC = () => {
             </Link>
           </li>
           <li>
-            <Scroll
-              to="collection"
-              smooth="easeOutCubic"
-              duration={500}
-              offset={-115}
-            >
+            <Scroll to="collection" {...scrollSettings}>
               Collection
             </Scroll>
           </li>
           <li>
-            <Scroll
-              to="news"
-              smooth="easeOutCubic"
-              duration={500}
-              offset={-115}
-            >
+            <Scroll to="news" {...scrollSettings}>
               News
             </Scroll>
           </li>
