@@ -12,7 +12,7 @@ import MotionFadeInUp from '@/components/MotionFadeInUp'
 
 import DefaultLayout from '@/layout/DefaultLayout'
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   const pageMeta = pages.about
 
   return (
@@ -20,6 +20,7 @@ const Home: NextPage = () => {
       <Meta {...pageMeta} />
 
       <CategoryMv category="about" />
+
       <MainContent>
         <MotionFadeInUp>
           <HeadingSection title="About Us" />
@@ -32,4 +33,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default About

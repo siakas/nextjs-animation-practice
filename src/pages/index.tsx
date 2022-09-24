@@ -21,6 +21,7 @@ const Home: NextPage = () => {
       <Meta {...pageMeta} />
 
       <MainVisual />
+
       <MainContent>
         <MotionFadeInUp>
           <HeadingSection id="collection" title="Collection" />
