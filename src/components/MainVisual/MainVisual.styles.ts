@@ -21,10 +21,24 @@ export const container = css`
       border-radius: 0;
       height: 3px;
       width: 80px;
+      background-color: #000;
+      opacity: 0.6;
 
       &.swiper-pagination-bullet-active {
         background-color: rgba(255, 255, 255, 0.7);
+        opacity: 1;
+        transform-origin: 0% 0%;
+        animation: progress 5s linear 0s 1 normal forwards;
       }
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
     }
   }
 `
