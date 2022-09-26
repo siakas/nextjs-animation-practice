@@ -27,7 +27,9 @@ const About: NextPage = () => {
           <AboutLead />
         </MotionFadeInUp>
 
-        <AboutItemList />
+        <MotionFadeInUp>
+          <AboutItemList />
+        </MotionFadeInUp>
       </MainContent>
     </DefaultLayout>
   )
