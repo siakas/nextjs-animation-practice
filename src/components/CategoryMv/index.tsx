@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import * as styles from './CategoryMv.styles'
 
-interface Props {
+type Props = {
   category: string
 }
 

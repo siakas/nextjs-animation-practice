@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { FC } from 'react'
 
-interface Props {
+type Props = {
   url: string
   title: string
   description: string

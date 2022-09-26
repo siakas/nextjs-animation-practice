@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import * as styles from './HeadingSection.styles'
 
-interface Props {
+type Props = {
   id?: string
   title: string
 }

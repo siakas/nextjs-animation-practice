@@ -8,7 +8,7 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import ScrollPageUp from '@/components/ScrollPageUp'
 
-interface Props {
+type Props = {
   children: ReactNode
 }
 

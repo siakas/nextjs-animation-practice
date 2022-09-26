@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react'
 
 import * as styles from './MainContent.styles'
 
-interface Props {
+type Props = {
   children: ReactNode
 }
 

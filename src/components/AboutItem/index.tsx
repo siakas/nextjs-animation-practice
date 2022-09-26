@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import * as styles from './AboutItem.styles'
 
-interface Props {
+type Props = {
   file: string
 }
 

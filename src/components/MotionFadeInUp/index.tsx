@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer'
 
 import { fadeInUp } from '@/animations/variants'
 
-interface Props {
+type Props = {
   children: ReactNode
 }
 
