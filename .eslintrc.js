@@ -26,6 +26,16 @@ module.exports = {
   ],
   ignorePatterns: ['build', 'dist'],
   rules: {
+    /* 不要な空白を許可しないが、配列のみ視認性のための空白を許容する */
+    // 'no-multi-spaces': [
+    //   'error',
+    //   {
+    //     exceptions: {
+    //       ArrayExpression: true,
+    //     },
+    //   },
+    // ],
+
     /* React v17 以降で eslint-plugin-react を使用している場合の設定 */
     /* 下記を OFF にすることで不要なエラーを回避 */
     'react/jsx-uses-react': 'off',
@@ -48,6 +58,9 @@ module.exports = {
 
     /* 静的サイト構築にともなう img タグの記述許可 */
     '@next/next/no-img-element': 'off',
+
+    /* interface ではなく type を使用 */
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
 
     /* unused-imports 向けの設定 */
     '@typescript-eslint/no-unused-vars': 'off', // or 'no-unused-vars': 'off'
@@ -89,10 +102,10 @@ module.exports = {
             group: 'builtin',
             position: 'before',
           },
-          // `@/context`, `@/hooks`, `@/utils`, `@/data`, `@/animations`, `@/layout` の import をグルーピング
+          // `@/context`, `@/hooks`, `@/utils`, `@/data`, `@/types`, `@/animations`, `@/layout` の import をグルーピング
           {
             pattern:
-              '{@/context/**,@/hooks/**,@/utils/**,@/data/**,@/animations/**,@/layout/**}',
+              '{@/context/**,@/hooks/**,@/utils/**,@/data/**,@/types/**,@/animations/**,@/layout/**}',
             group: 'internal',
             position: 'before',
           },
