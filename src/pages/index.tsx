@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 
-import { pages } from '@/data/sheets.json'
+import SheetData from '@/data/sheets.json'
 import DefaultLayout from '@/layout/DefaultLayout'
 
 import BannerInstagram from '@/components/BannerInstagram'
@@ -13,7 +13,7 @@ import MotionFadeInUp from '@/components/MotionFadeInUp'
 import NewsList from '@/components/NewsList'
 
 const Home: NextPage = () => {
-  const pageMeta = pages.top
+  const pageMeta = SheetData.pages.top
 
   return (
     <DefaultLayout>

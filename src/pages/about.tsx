@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 
-import { pages } from '@/data/sheets.json'
+import SheetData from '@/data/sheets.json'
 import DefaultLayout from '@/layout/DefaultLayout'
 
 import AboutItemList from '@/components/AboutItemList'
@@ -12,7 +12,7 @@ import Meta from '@/components/Meta'
 import MotionFadeInUp from '@/components/MotionFadeInUp'
 
 const About: NextPage = () => {
-  const pageMeta = pages.about
+  const pageMeta = SheetData.pages.about
 
   return (
     <DefaultLayout>
