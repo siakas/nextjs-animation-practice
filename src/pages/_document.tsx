@@ -2,7 +2,7 @@ import { Head, Html, Main, NextScript } from 'next/document'
 
 const Document = (): any => {
   return (
-    <Html id="root">
+    <Html lang="ja" id="root">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
