@@ -89,10 +89,10 @@ module.exports = {
             group: 'builtin',
             position: 'before',
           },
-          // `@/context`, `@/hooks`, `@/utils` の import をグルーピング
+          // `@/context`, `@/hooks`, `@/utils`, `@/data`, `@/animations`, `@/layout` の import をグルーピング
           {
             pattern:
-              '{@/context/**,@/hooks/**,@/utils/**,@/data/**,@/animations/**}',
+              '{@/context/**,@/hooks/**,@/utils/**,@/data/**,@/animations/**,@/layout/**}',
             group: 'internal',
             position: 'before',
           },
