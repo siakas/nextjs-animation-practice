@@ -5,7 +5,6 @@ module.exports = {
   },
   extends: [
     'next/core-web-vitals',
-    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'standard-with-typescript',
@@ -17,13 +16,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'react-hooks',
-    'import',
-    'unused-imports',
-  ],
+  plugins: ['react', 'react-hooks', 'import', 'unused-imports'],
   ignorePatterns: ['build', 'dist'],
   rules: {
     /* 不要な空白を許可しないが、配列のみ視認性のための空白を許容する */
@@ -53,6 +46,17 @@ module.exports = {
       {
         component: true,
         html: false,
+      },
+    ],
+
+    /* TypeScript では PropTypes による型チェックは不要 */
+    'react/prop-types': 'off',
+
+    /* Emotion で利用する css prop を許容 */
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: ['css'],
       },
     ],
 
@@ -127,18 +131,10 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.ts', '**/*.tsx'],
+      files: ['**/*.styles.ts'],
       rules: {
-        /* TypeScript では PropTypes による型チェックは不要 */
-        'react/prop-types': 'off',
-
-        /* Emotion で利用する css prop を許容 */
-        'react/no-unknown-property': [
-          'error',
-          {
-            ignore: ['css'],
-          },
-        ],
+        /* Emotion が定義する *.styles.ts では default export の強制を無効化 */
+        'import/prefer-default-export': 'off',
       },
     },
   ],

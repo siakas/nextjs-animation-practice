@@ -7,7 +7,10 @@
     "build": "next build",
     "export": "next build && next export -o dist",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "run-s -c lint:*",
+    "lint:eslint": "eslint .",
+    "lint-fix": "run-s -c lint-fix:*",
+    "lint-fix:eslint": "npm run lint:eslint -- --fix",
     "stylelint": "stylelint --ignore-path .gitignore \"src/**/*.+(css|ts|tsx)\"",
     "stylelintfix": "npm run stylelint -- --fix"
   },
