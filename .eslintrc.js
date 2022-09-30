@@ -5,10 +5,9 @@ module.exports = {
   },
   extends: [
     'next/core-web-vitals',
-    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'standard-with-typescript',
+    'airbnb',
+    'airbnb-typescript',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
@@ -17,13 +16,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'react-hooks',
-    'import',
-    'unused-imports',
-  ],
+  plugins: ['react', 'import', 'unused-imports'],
   ignorePatterns: ['build', 'dist'],
   rules: {
     /* 不要な空白を許可しないが、配列のみ視認性のための空白を許容する */
@@ -35,6 +28,9 @@ module.exports = {
     //     },
     //   },
     // ],
+
+    /* 関数のブラケット省略を強制しない */
+    'arrow-body-style': 'off',
 
     /* React v17 以降で eslint-plugin-react を使用している場合の設定 */
     /* 下記を OFF にすることで不要なエラーを回避 */
@@ -53,6 +49,25 @@ module.exports = {
       {
         component: true,
         html: false,
+      },
+    ],
+
+    /* TypeScript では PropTypes による型チェックは不要 */
+    'react/prop-types': 'off',
+
+    /* Emotion で利用する css prop を許容 */
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: ['css'],
+      },
+    ],
+
+    /* React の名前付きコンポーネントにアロー関数による宣言を適用 */
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
       },
     ],
 
@@ -127,18 +142,10 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.ts', '**/*.tsx'],
+      files: ['**/*.styles.ts'],
       rules: {
-        /* TypeScript では PropTypes による型チェックは不要 */
-        'react/prop-types': 'off',
-
-        /* Emotion で利用する css prop を許容 */
-        'react/no-unknown-property': [
-          'error',
-          {
-            ignore: ['css'],
-          },
-        ],
+        /* Emotion が定義する *.styles.ts では default export の強制を無効化 */
+        'import/prefer-default-export': 'off',
       },
     },
   ],
